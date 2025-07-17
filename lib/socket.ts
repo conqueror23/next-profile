@@ -1,38 +1,74 @@
-import { io } from 'socket.io-client';
+import { io, Socket } from 'socket.io-client';
 
-const socketPort = 5005
-export const socket = io(`http://localhost:${socketPort}`);
+const SOCKET_URL = process.env.NEXT_PUBLIC_SOCKET_URL || 'http://localhost:5005';
 
-export const connectServer = () => {
-  socket.on('connect', () => {
-    console.log('Connected to server');
-    socket.emit('message', 'Hello from client!');
-  });
+class SocketManager {
+  private socket: Socket | null = null;
+  private isConnected = false;
 
+  connect(): Socket {
+    if (!this.socket) {
+      this.socket = io(SOCKET_URL);
+      this.setupEventListeners();
+    }
+    return this.socket;
+  }
+
+  private setupEventListeners(): void {
+    if (!this.socket) return;
+
+    this.socket.on('connect', () => {
+      this.isConnected = true;
+      console.log('Connected to server');
+    });
+
+    this.socket.on('disconnect', () => {
+      this.isConnected = false;
+      console.log('Disconnected from server');
+    });
+  }
+
+  disconnect(): void {
+    if (this.socket) {
+      this.socket.disconnect();
+      this.socket = null;
+      this.isConnected = false;
+    }
+  }
+
+  emit(event: string, data: any): void {
+    if (this.socket && this.isConnected) {
+      this.socket.emit(event, data);
+    }
+  }
+
+  on(event: string, callback: (data: any) => void): void {
+    if (this.socket) {
+      this.socket.on(event, callback);
+    }
+  }
+
+  getConnectionStatus(): boolean {
+    return this.isConnected;
+  }
 }
 
-export const getMessage = (passSocketMsg: Function) => {
-  socket.on('response', (data: string) => {
-    passSocketMsg(data)
-    console.log('getMessage:', data);
-  });
-}
+export const socketManager = new SocketManager();
+export const socket = socketManager.connect();
 
+export const connectServer = (): void => {
+  socketManager.connect();
+};
 
-export const sendMessage = (message: string) => {
-  socket.on('connect', () => {
-    console.log('Connected to server');
-  });
+export const getMessage = (callback: (data: string) => void): void => {
+  socketManager.on('response', callback);
+};
 
-  // socket.on('server-message', (data) => {
-  //   console.log('Message from server:', data);
-  // });
-  // Example: Send a simple string message
-  socket.emit('message', message);
+export const sendMessage = (message: string, user: string = 'User'): void => {
+  socketManager.emit('chatMessage', { user, text: message });
+};
 
-  socket.emit('client-message', message);
-
-  // Example: Send an object with structured data
-  socket.emit('chatMessage', { user: 'Alice', text: message });
-}
+export const disconnect = (): void => {
+  socketManager.disconnect();
+};
 

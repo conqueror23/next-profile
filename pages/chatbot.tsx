@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import { getMessage, sendMessage, socket } from '../components/socket'
+import { getMessage, sendMessage, socket } from '../lib/socket'
 import { useState } from "react"
 const ChatBot: NextPage = () => {
   const [chatMessage, setChatMessage] = useState("hi")
