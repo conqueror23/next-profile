@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Senior Software Engineer",
+    "company": "Meta (Facebook)",
+    "responsibilities": "Lead development of scalable web applications serving millions of users. Architect and implement microservices using React, Node.js, and GraphQL. Mentor junior developers and contribute to technical decision-making. Optimize application performance and implement best practices for code quality.",
+    "startTime": "2022-03",
+    "endTime": "Present",
+    "duration": "2+ years"
+  },
+  {
+    "title": "Software Engineer II",
+    "company": "Google",
+    "responsibilities": "Developed and maintained large-scale distributed systems using Java and Python. Collaborated with cross-functional teams to deliver high-quality software solutions. Implemented automated testing and CI/CD pipelines. Participated in code reviews and technical design discussions.",
+    "startTime": "2021-06",
+    "endTime": "2022-02",
+    "duration": "8 months"
+  },
+  {
+    "title": "Software Engineer Intern",
+    "company": "Apple",
+    "responsibilities": "Built mobile and web applications using Swift and React. Worked on user interface improvements and performance optimizations. Collaborated with design teams to implement intuitive user experiences. Contributed to internal tools and automation scripts.",
+    "startTime": "2020-06",
+    "endTime": "2020-08",
+    "duration": "3 months"
+  },
+  {
+    "title": "Full Stack Developer Intern",
+    "company": "Startup Inc.",
+    "responsibilities": "Developed end-to-end web applications using MEAN stack. Implemented RESTful APIs and database schemas. Created responsive user interfaces and mobile-first designs. Participated in agile development processes and sprint planning.",
+    "startTime": "2019-06",
+    "endTime": "2019-08",
+    "duration": "3 months"
+  }
+]

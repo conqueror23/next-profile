@@ -3,9 +3,9 @@ import { getMessage, sendMessage, socket } from '../lib/socket'
 import { useState } from "react"
 const ChatBot: NextPage = () => {
   const [chatMessage, setChatMessage] = useState("hi")
-  const [socketMsg, setSocketMsg] = useState()
+  const [socketMsg, setSocketMsg] = useState<string>("")
 
-  getMessage(setSocketMsg)
+  getMessage((data: string) => setSocketMsg(data))
   return (
     <>
       <div>
@@ -16,7 +16,7 @@ const ChatBot: NextPage = () => {
         <p>{socketMsg}</p>
         <h2>-----</h2>
       </div>
-      <button onClick={() => getMessage(setChatMessage)}>
+      <button onClick={() => getMessage((data: string) => setChatMessage(data))}>
         Get Message
       </button >
       <input

@@ -1,0 +1,145 @@
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.degree {
+  color: #1f2937;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+  flex: 1;
+}
+
+.period {
+  background: #f3f4f6;
+  color: #6b7280;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.institution {
+  margin-bottom: 16px;
+}
+
+.institution h4 {
+  color: #374151;
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0 0 4px 0;
+}
+
+.field {
+  color: #6b7280;
+  font-size: 1rem;
+  margin: 0;
+  font-style: italic;
+}
+
+.grade {
+  margin-bottom: 16px;
+  padding: 8px 12px;
+  background: #f0f9ff;
+  border-radius: 6px;
+  border-left: 3px solid #0ea5e9;
+}
+
+.gradeLabel {
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.gradeValue {
+  color: #0ea5e9;
+  font-weight: 600;
+}
+
+.description {
+  color: #4b5563;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  font-size: 0.95rem;
+}
+
+.achievements {
+  background: #f9fafb;
+  border-radius: 8px;
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+}
+
+.achievements h5 {
+  color: #374151;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.achievements ul {
+  margin: 0;
+  padding-left: 20px;
+  list-style-type: none;
+}
+
+.achievements li {
+  color: #4b5563;
+  margin-bottom: 8px;
+  position: relative;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.achievements li:before {
+  content: "•";
+  color: #10b981;
+  font-weight: bold;
+  position: absolute;
+  left: -16px;
+}
+
+.achievements li:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 20px;
+  }
+  
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .degree {
+    font-size: 1.125rem;
+  }
+  
+  .period {
+    align-self: flex-start;
+  }
+}

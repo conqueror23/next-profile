@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import { useQuery, gql, ApolloProvider } from '@apollo/react-hooks';
+import { useQuery, gql, ApolloProvider } from '@apollo/client';
 import { apolloClient } from '../lib/apoloClient';
 
 const GraphQLUI: NextPage = () => {

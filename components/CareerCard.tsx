@@ -1,5 +1,10 @@
 import { Career } from '../models'
-const CareerCard = (career: Career) => {
+
+interface CareerCardProps {
+  career: Career;
+}
+
+const CareerCard: React.FC<CareerCardProps> = ({ career }) => {
   const { title, company, startTime, endTime, responsibilities } = career
   return (
     <div>

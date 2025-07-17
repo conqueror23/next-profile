@@ -1,0 +1,23 @@
+{
+  "title": "Software Engineer",
+  "summary": "Passionate software engineer with expertise in full-stack development, modern web technologies, and scalable application architecture. Experienced in building robust applications using React, Node.js, and cloud technologies. Strong problem-solving skills with a focus on clean code and user experience.",
+  "highlights": [
+    "Developed and deployed full-stack applications using modern frameworks",
+    "Implemented responsive web designs with focus on performance optimization",
+    "Experience with microservices architecture and API development",
+    "Proficient in both frontend and backend development workflows",
+    "Active contributor to open-source projects and technical communities"
+  ],
+  "skills": [
+    "JavaScript/TypeScript",
+    "React.js/Next.js",
+    "Node.js/Express.js",
+    "Python/Java",
+    "HTML5/CSS3/SASS",
+    "GraphQL/REST APIs",
+    "MongoDB/PostgreSQL",
+    "AWS/Docker",
+    "Git/GitHub",
+    "Agile/Scrum"
+  ]
+}
