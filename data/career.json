@@ -1,34 +1,42 @@
 [
   {
     "title": "Senior Software Engineer",
-    "company": "Meta (Facebook)",
-    "responsibilities": "Lead development of scalable web applications serving millions of users. Architect and implement microservices using React, Node.js, and GraphQL. Mentor junior developers and contribute to technical decision-making. Optimize application performance and implement best practices for code quality.",
-    "startTime": "2022-03",
+    "company": "HelloFresh",
+    "responsibilities": "Developed data analytics products and automated pipelines to drive business growth. Built AWS/GCP solutions enabling cross-team collaboration. Managed partner programs to amplify business performance. Delivered analytics via Databricks and scaled infrastructure with Terraform and GitHub CI/CD.",
+    "startTime": "2024-09",
     "endTime": "Present",
-    "duration": "2+ years"
+    "duration": "11 months"
   },
   {
-    "title": "Software Engineer II",
-    "company": "Google",
-    "responsibilities": "Developed and maintained large-scale distributed systems using Java and Python. Collaborated with cross-functional teams to deliver high-quality software solutions. Implemented automated testing and CI/CD pipelines. Participated in code reviews and technical design discussions.",
-    "startTime": "2021-06",
-    "endTime": "2022-02",
-    "duration": "8 months"
+    "title": "Fullstack Engineer",
+    "company": "Kindred Group plc",
+    "responsibilities": "Designed and maintained distributed systems on Kubernetes. Standardized release tagging with Conventional Commits. Built Docker-based dev environments and integrated Elastic/Grafana for observability. Optimized PostgreSQL databases and implemented full test coverage. Developed CI/CD pipelines (Jenkins, Bitbucket) and followed Agile processes using Jira. Tech Stack: Docker, Kubernetes, Typescript, Kafka, Microservices, Postgres.",
+    "startTime": "2022-04",
+    "endTime": "2024-09",
+    "duration": "2 years 6 months"
   },
   {
-    "title": "Software Engineer Intern",
-    "company": "Apple",
-    "responsibilities": "Built mobile and web applications using Swift and React. Worked on user interface improvements and performance optimizations. Collaborated with design teams to implement intuitive user experiences. Contributed to internal tools and automation scripts.",
-    "startTime": "2020-06",
-    "endTime": "2020-08",
+    "title": "Technical Team Lead",
+    "company": "ACY Securities",
+    "responsibilities": "Led an 8-member team to deliver a multilingual Greenfield site across 5 regions. Directed development of a CMS, auto-translation service (AWS), and BFF using Gatsby and GraphQL. Architected AWS-based infrastructure (EC2, Lambda@Edge) for high performance. Implemented SEO, Google Tag Manager, Analytics, and Ads. Designed CI/CD workflows for multi-domain releases. Standardized code quality with ESLint, Prettier, Husky, and Git hooks. Maintained shared libraries (Artifactory) and contributed to the corporate design system.",
+    "startTime": "2019-10",
+    "endTime": "2022-04",
+    "duration": "2 years 7 months"
+  },
+  {
+    "title": "Frontend Developer",
+    "company": "Delion Pty Ltd",
+    "responsibilities": "Designed and developed new user interfaces for front-end projects. Researched and applied front-end best practices to ensure modern, efficient design. Built cross-browser compatible solutions to ensure consistent user experiences across platforms. Implemented accessibility standards and user-centered design principles to enhance usability. Collaborated closely with backend teams to integrate APIs and ensure seamless functionality. Tech Stacks: Vue.js, Nuxt.js.",
+    "startTime": "2019-08",
+    "endTime": "2019-10",
     "duration": "3 months"
   },
   {
-    "title": "Full Stack Developer Intern",
-    "company": "Startup Inc.",
-    "responsibilities": "Developed end-to-end web applications using MEAN stack. Implemented RESTful APIs and database schemas. Created responsive user interfaces and mobile-first designs. Participated in agile development processes and sprint planning.",
-    "startTime": "2019-06",
-    "endTime": "2019-08",
-    "duration": "3 months"
+    "title": "Software Developer",
+    "company": "Articulate Pty Ltd",
+    "responsibilities": "Designed and developed new features and components for backend systems using PHP and the Laravel framework. Built and maintained front-end websites using HTML, CSS, JavaScript, and jQuery. Maintained and enhanced front-end applications built with the Vue.js framework. Managed data integrity by reviewing data transfers and maintaining records in a centralized database. Analyzed abnormal data patterns and records, developing algorithms to extract business insights. Communicated with suppliers, agents, and customers to provide technical solutions, guidance, and manage relationships effectively.",
+    "startTime": "2019-03",
+    "endTime": "2019-07",
+    "duration": "5 months"
   }
 ]

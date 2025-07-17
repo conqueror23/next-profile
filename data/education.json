@@ -1,31 +1,30 @@
 [
   {
-    "institution": "University of California, Berkeley",
-    "degree": "Master of Science",
-    "field": "Computer Science",
-    "startDate": "2019-08",
-    "endDate": "2021-05",
-    "grade": "3.7 GPA",
-    "description": "Advanced coursework in software engineering, algorithms, and distributed systems",
+    "institution": "University of Wollongong",
+    "degree": "Master's degree",
+    "field": "Information Technology",
+    "startDate": "2017",
+    "endDate": "2019",
+    "grade": "",
+    "description": "Advanced coursework in information technology with focus on software development and system design",
     "achievements": [
-      "Teaching Assistant for Data Structures and Algorithms",
-      "Research in distributed computing and scalability",
-      "Contributed to open-source projects during academic tenure"
+      "Specialized in modern web technologies and distributed systems",
+      "Developed expertise in full-stack development methodologies",
+      "Completed advanced projects in software engineering"
     ]
   },
   {
-    "institution": "University of California, San Diego",
-    "degree": "Bachelor of Science",
-    "field": "Computer Science",
-    "startDate": "2015-09",
-    "endDate": "2019-06",
-    "grade": "3.6 GPA",
-    "description": "Comprehensive foundation in computer science with focus on software development",
+    "institution": "Chongqing University of Post and Telecommunications",
+    "degree": "Bachelor's degree",
+    "field": "Telecommunications Engineering",
+    "startDate": "2013",
+    "endDate": "2016",
+    "grade": "",
+    "description": "Comprehensive foundation in telecommunications engineering with emphasis on technical problem-solving",
     "achievements": [
-      "Dean's List for multiple semesters",
-      "Member of ACM Student Chapter",
-      "Completed capstone project in web application development",
-      "Active participant in hackathons and coding competitions"
+      "Strong foundation in engineering principles and technical analysis",
+      "Developed analytical and problem-solving skills applicable to software development",
+      "Gained experience in complex system design and implementation"
     ]
   }
 ]
