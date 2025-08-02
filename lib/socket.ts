@@ -8,7 +8,17 @@ class SocketManager {
 
   connect(): Socket {
     if (!this.socket) {
-      this.socket = io(SOCKET_URL);
+      console.log('Attempting to connect to Socket.io server at:', SOCKET_URL);
+      this.socket = io(SOCKET_URL, {
+        transports: ['polling'],
+        timeout: 5000,
+        reconnection: true,
+        reconnectionAttempts: 3,
+        reconnectionDelay: 2000,
+        forceNew: false,
+        autoConnect: true,
+        upgrade: false
+      });
       this.setupEventListeners();
     }
     return this.socket;
@@ -22,9 +32,27 @@ class SocketManager {
       console.log('Connected to server');
     });
 
-    this.socket.on('disconnect', () => {
+    this.socket.on('disconnect', (reason) => {
       this.isConnected = false;
-      console.log('Disconnected from server');
+      console.log('Disconnected from server:', reason);
+    });
+
+    this.socket.on('connect_error', (error) => {
+      this.isConnected = false;
+      console.error('Connection error:', error.message || error);
+    });
+
+    this.socket.on('reconnect', (attemptNumber) => {
+      this.isConnected = true;
+      console.log('Reconnected to server after', attemptNumber, 'attempts');
+    });
+
+    this.socket.on('reconnect_error', (error) => {
+      console.error('Reconnection failed:', error.message || error);
+    });
+
+    this.socket.on('reconnect_failed', () => {
+      console.error('Reconnection failed after all attempts');
     });
   }
 
