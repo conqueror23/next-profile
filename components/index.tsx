@@ -6,4 +6,6 @@ export * as Summary from "./Summary"
 export * as Education from "./EducationCard"
 export * as Contact from "./ContactDetails"
 export * as ResumeHeader from "./ResumeHeader"
+export * as Services from "./ServiceCard"
+export * as Products from "./ProductCard"
 

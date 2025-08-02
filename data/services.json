@@ -1,0 +1,110 @@
+[
+  {
+    "id": "web-dev",
+    "name": "Full-Stack Web Development",
+    "description": "Complete web application development using modern technologies like React, Next.js, Node.js, and TypeScript. From conception to deployment.",
+    "category": "Development",
+    "price": "Starting at $5,000",
+    "duration": "4-8 weeks",
+    "features": [
+      "Responsive Design",
+      "SEO Optimization",
+      "Performance Optimization",
+      "Database Integration",
+      "API Development",
+      "Testing & Quality Assurance"
+    ],
+    "image": "/images/services/web-dev.jpg",
+    "isPopular": true
+  },
+  {
+    "id": "mobile-app",
+    "name": "Mobile App Development",
+    "description": "Native and cross-platform mobile applications for iOS and Android using React Native and Flutter.",
+    "category": "Development",
+    "price": "Starting at $8,000",
+    "duration": "6-12 weeks",
+    "features": [
+      "Cross-platform Compatibility",
+      "Native Performance",
+      "Push Notifications",
+      "Offline Functionality",
+      "App Store Deployment",
+      "Analytics Integration"
+    ],
+    "image": "/images/services/mobile-app.jpg",
+    "isPopular": false
+  },
+  {
+    "id": "consulting",
+    "name": "Technical Consulting",
+    "description": "Expert guidance on technology stack selection, architecture design, and best practices for your project.",
+    "category": "Consulting",
+    "price": "$150/hour",
+    "duration": "Flexible",
+    "features": [
+      "Technology Assessment",
+      "Architecture Planning",
+      "Code Review",
+      "Performance Analysis",
+      "Security Audit",
+      "Team Training"
+    ],
+    "image": "/images/services/consulting.jpg",
+    "isPopular": false
+  },
+  {
+    "id": "ui-ux",
+    "name": "UI/UX Design",
+    "description": "User-centered design solutions that create intuitive and engaging digital experiences.",
+    "category": "Design",
+    "price": "Starting at $3,000",
+    "duration": "3-6 weeks",
+    "features": [
+      "User Research",
+      "Wireframing",
+      "Prototyping",
+      "Visual Design",
+      "Usability Testing",
+      "Design System Creation"
+    ],
+    "image": "/images/services/ui-ux.jpg",
+    "isPopular": true
+  },
+  {
+    "id": "api-dev",
+    "name": "API Development & Integration",
+    "description": "RESTful and GraphQL APIs with comprehensive documentation and third-party integrations.",
+    "category": "Development",
+    "price": "Starting at $2,500",
+    "duration": "2-4 weeks",
+    "features": [
+      "RESTful API Design",
+      "GraphQL Implementation",
+      "API Documentation",
+      "Authentication & Security",
+      "Rate Limiting",
+      "Monitoring & Analytics"
+    ],
+    "image": "/images/services/api-dev.jpg",
+    "isPopular": false
+  },
+  {
+    "id": "devops",
+    "name": "DevOps & Cloud Solutions",
+    "description": "CI/CD pipeline setup, cloud infrastructure, and deployment automation for scalable applications.",
+    "category": "Infrastructure",
+    "price": "Starting at $4,000",
+    "duration": "3-5 weeks",
+    "features": [
+      "CI/CD Pipeline Setup",
+      "Cloud Infrastructure",
+      "Container Orchestration",
+      "Monitoring & Logging",
+      "Security Configuration",
+      "Performance Optimization"
+    ],
+    "image": "/images/services/devops.jpg",
+    "isPopular": true
+  }
+]

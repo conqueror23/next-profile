@@ -34,7 +34,7 @@ describe('/api/hello API route', () => {
   })
 
   test('returns correct response for any HTTP method', async () => {
-    const methods = ['GET', 'POST', 'PUT', 'DELETE', 'PATCH']
+    const methods = ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'] as const
     
     for (const method of methods) {
       const { req, res } = createMocks<NextApiRequest, NextApiResponse>({

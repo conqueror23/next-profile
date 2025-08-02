@@ -148,7 +148,7 @@ describe('ChatBot Page', () => {
     
     if (disconnectHandler) {
       await act(async () => {
-        disconnectHandler()
+        disconnectHandler('disconnect reason')
       })
     }
     

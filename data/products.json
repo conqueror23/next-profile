@@ -1,0 +1,174 @@
+[
+  {
+    "id": "portfolio-template",
+    "name": "Professional Portfolio Template",
+    "description": "A modern, responsive portfolio template built with Next.js and TypeScript. Perfect for developers and designers showcasing their work.",
+    "price": 49.99,
+    "currency": "USD",
+    "category": "Templates",
+    "image": "/images/products/portfolio-template.jpg",
+    "gallery": [
+      "/images/products/portfolio-template-1.jpg",
+      "/images/products/portfolio-template-2.jpg",
+      "/images/products/portfolio-template-3.jpg"
+    ],
+    "inStock": true,
+    "stockQuantity": 999,
+    "rating": 4.8,
+    "reviewCount": 127,
+    "tags": ["Next.js", "TypeScript", "Responsive", "Portfolio"],
+    "specifications": {
+      "Framework": "Next.js 15",
+      "Language": "TypeScript",
+      "Styling": "CSS Modules",
+      "Responsive": "Yes",
+      "Browser Support": "Modern browsers"
+    },
+    "isNew": false,
+    "isFeatured": true,
+    "discount": 20
+  },
+  {
+    "id": "react-component-library",
+    "name": "React Component Library",
+    "description": "A comprehensive collection of reusable React components with TypeScript support and Storybook documentation.",
+    "price": 89.99,
+    "currency": "USD",
+    "category": "Components",
+    "image": "/images/products/component-library.jpg",
+    "gallery": [
+      "/images/products/component-library-1.jpg",
+      "/images/products/component-library-2.jpg"
+    ],
+    "inStock": true,
+    "stockQuantity": 999,
+    "rating": 4.9,
+    "reviewCount": 89,
+    "tags": ["React", "TypeScript", "Components", "Storybook"],
+    "specifications": {
+      "Components": "50+ components",
+      "Framework": "React 18",
+      "Language": "TypeScript",
+      "Documentation": "Storybook",
+      "Testing": "Jest & Testing Library"
+    },
+    "isNew": true,
+    "isFeatured": true
+  },
+  {
+    "id": "dashboard-template",
+    "name": "Admin Dashboard Template",
+    "description": "Feature-rich admin dashboard with charts, tables, forms, and user management. Built with React and modern UI libraries.",
+    "price": 79.99,
+    "currency": "USD",
+    "category": "Templates",
+    "image": "/images/products/dashboard-template.jpg",
+    "gallery": [
+      "/images/products/dashboard-template-1.jpg",
+      "/images/products/dashboard-template-2.jpg",
+      "/images/products/dashboard-template-3.jpg",
+      "/images/products/dashboard-template-4.jpg"
+    ],
+    "inStock": true,
+    "stockQuantity": 999,
+    "rating": 4.7,
+    "reviewCount": 156,
+    "tags": ["Dashboard", "Admin", "Charts", "React"],
+    "specifications": {
+      "Pages": "25+ pages",
+      "Charts": "Multiple chart types",
+      "Authentication": "JWT support",
+      "Responsive": "Yes",
+      "Dark Mode": "Yes"
+    },
+    "isNew": false,
+    "isFeatured": false,
+    "discount": 15
+  },
+  {
+    "id": "api-starter",
+    "name": "Node.js API Starter Kit",
+    "description": "Production-ready Node.js API boilerplate with authentication, database integration, and comprehensive testing setup.",
+    "price": 39.99,
+    "currency": "USD",
+    "category": "Boilerplates",
+    "image": "/images/products/api-starter.jpg",
+    "gallery": [
+      "/images/products/api-starter-1.jpg",
+      "/images/products/api-starter-2.jpg"
+    ],
+    "inStock": true,
+    "stockQuantity": 999,
+    "rating": 4.6,
+    "reviewCount": 73,
+    "tags": ["Node.js", "API", "Authentication", "Database"],
+    "specifications": {
+      "Runtime": "Node.js 18+",
+      "Database": "MongoDB/PostgreSQL",
+      "Authentication": "JWT + Refresh tokens",
+      "Testing": "Jest + Supertest",
+      "Documentation": "Swagger/OpenAPI"
+    },
+    "isNew": true,
+    "isFeatured": false
+  },
+  {
+    "id": "mobile-ui-kit",
+    "name": "React Native UI Kit",
+    "description": "Beautiful and customizable UI components for React Native apps. Includes 40+ components with consistent design.",
+    "price": 69.99,
+    "currency": "USD",
+    "category": "Components",
+    "image": "/images/products/mobile-ui-kit.jpg",
+    "gallery": [
+      "/images/products/mobile-ui-kit-1.jpg",
+      "/images/products/mobile-ui-kit-2.jpg",
+      "/images/products/mobile-ui-kit-3.jpg"
+    ],
+    "inStock": true,
+    "stockQuantity": 999,
+    "rating": 4.8,
+    "reviewCount": 94,
+    "tags": ["React Native", "Mobile", "UI Kit", "Components"],
+    "specifications": {
+      "Platform": "iOS & Android",
+      "Components": "40+ components",
+      "Theming": "Light & Dark modes",
+      "Animation": "Smooth animations",
+      "TypeScript": "Full support"
+    },
+    "isNew": false,
+    "isFeatured": true,
+    "discount": 25
+  },
+  {
+    "id": "ecommerce-template",
+    "name": "E-commerce Website Template",
+    "description": "Complete e-commerce solution with product catalog, shopping cart, payment integration, and admin panel.",
+    "price": 199.99,
+    "currency": "USD",
+    "category": "Templates",
+    "image": "/images/products/ecommerce-template.jpg",
+    "gallery": [
+      "/images/products/ecommerce-template-1.jpg",
+      "/images/products/ecommerce-template-2.jpg",
+      "/images/products/ecommerce-template-3.jpg",
+      "/images/products/ecommerce-template-4.jpg"
+    ],
+    "inStock": true,
+    "stockQuantity": 999,
+    "rating": 4.9,
+    "reviewCount": 201,
+    "tags": ["E-commerce", "Shopping", "Payment", "Admin"],
+    "specifications": {
+      "Features": "Full e-commerce functionality",
+      "Payment": "Stripe integration",
+      "Admin Panel": "Product & order management",
+      "SEO": "Optimized for search engines",
+      "Performance": "Optimized for speed"
+    },
+    "isNew": false,
+    "isFeatured": true,
+    "discount": 10
+  }
+]
