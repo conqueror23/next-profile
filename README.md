@@ -101,10 +101,20 @@ Open [http://localhost:3000](http://localhost:3000) to view the application.
 
 ## 🔧 Available Scripts
 
+### Development
 - `npm run dev` - Start development server
 - `npm run build` - Build for production
 - `npm start` - Start production server
 - `npm run lint` - Run ESLint
+
+### Testing
+- `npm test` - Run all tests
+- `npm run test:watch` - Run tests in watch mode
+- `npm run test:coverage` - Run tests with coverage report
+- `npm run test:ci` - Run tests in CI mode
+- `npm run test:components` - Run component tests only
+- `npm run test:components:watch` - Run component tests in watch mode
+- `npm run test:components:coverage` - Run component tests with coverage
 
 ## 🌐 Pages & Features
 
@@ -169,6 +179,67 @@ const GET_PROFILE = gql`
   }
 `;
 ```
+
+## 🧪 Testing
+
+The project includes comprehensive testing setup with Jest and React Testing Library.
+
+### Test Structure
+```
+__tests__/
+├── components/        # Component unit tests
+│   ├── CareerCard.test.tsx
+│   ├── ContactDetails.test.tsx
+│   ├── PersonalDetails.test.tsx
+│   ├── ProjectCard.test.tsx
+│   └── Summary.test.tsx
+├── lib/              # Library/utility tests
+│   ├── apolloClient.test.ts
+│   └── socket.test.ts
+├── models/           # Data model tests
+│   ├── career.test.ts
+│   ├── contact.test.ts
+│   ├── education.test.ts
+│   └── project.test.ts
+└── pages/           # Page component tests
+    ├── api/
+    │   └── hello.test.ts
+    ├── chatbot.test.tsx
+    └── index.test.tsx
+```
+
+### Running Tests
+
+```bash
+# Run all tests
+npm test
+
+# Run tests in watch mode (great for development)
+npm run test:watch
+
+# Run tests with coverage report
+npm run test:coverage
+
+# Run only component tests
+npm run test:components
+
+# Run component tests in watch mode
+npm run test:components:watch
+
+# Run component tests with coverage
+npm run test:components:coverage
+
+# Run tests in CI mode (used in automated builds)
+npm run test:ci
+```
+
+### Test Configuration
+
+- **Jest**: Configured with Next.js integration
+- **React Testing Library**: For component testing
+- **jsdom**: Browser environment simulation
+- **Coverage**: Tracks coverage for components, lib, models, and pages
+- **TypeScript**: Full TypeScript support in tests
 
 ## 🧩 Module Federation
 

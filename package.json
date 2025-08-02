@@ -10,7 +10,10 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "test:ci": "jest --ci --coverage --watchAll=false"
+    "test:ci": "jest --ci --coverage --watchAll=false",
+    "test:components": "jest __tests__/components",
+    "test:components:watch": "jest __tests__/components --watch",
+    "test:components:coverage": "jest __tests__/components --coverage"
   },
   "dependencies": {
     "@apollo/client": "^3.13.8",
